@@ -1,37 +1,40 @@
 <div class="sticky-top">
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">This is a webpage of Quotes. You can find here some of the best quotes in the world and
-            if you find any missing you can add yours.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">This is a webpage of Quotes. You can find here some of the best quotes in the world
+              and
+              if you find any missing you can add yours.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="www.twitter.com" target="_blank" class="text-white">Follow on Twitter</a></li>
+              <li><a href="www.facebook.com" class="text-white" target="_blank">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container-fluid d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <strong>Quotes</strong>
-      </a>
-      <button class="btn btn-outline-primary my-2 my-sm-0" (click)="toggle()" >Post Quote</button>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-      aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</div>
-</header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Quotes</strong>
+        </a>
+        <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#formModal">
+          Post Quote
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 </div>
 
 <section class="jumbotron text-center">
@@ -56,14 +59,14 @@
               <p class="card-text">Making mistakes is better than faking perfection</p>
               <div class="d-flex justify-content-between mb-3">
                 <div class="btn-group voting">
-                  <a href="" class="btn p-2">
+                  <span href="" class="btn p-2">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="btn p-2">
+                  </span>
+                  <span href="" class="btn p-2">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted ml-auto p-2" id="posted">9 mins</small>
               </div>
@@ -85,14 +88,14 @@
                 for the impossible</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">10 mins</small>
               </div>
@@ -113,14 +116,14 @@
               <p class="card-text">We live in the world when we love it.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
-                    <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                    <pre class="">0</pre>
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">29 mins</small>
               </div>
@@ -141,14 +144,14 @@
               <p class="card-text">You never have to chase what wants to stay.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -170,14 +173,14 @@
                 Don't be afraid of what comes next. You'll be okay.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -199,14 +202,14 @@
                 glad that you didn't give up.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -227,14 +230,14 @@
               <p class="card-text">Things never happen the same way twice.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -252,17 +255,18 @@
           <img src="assets/img/q8.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">Sometimes it's easier to say you don't care than to explain all the reasons why you do.</p>
+              <p class="card-text">Sometimes it's easier to say you don't care than to explain all the reasons why you
+                do.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -280,17 +284,18 @@
           <img src="assets/img/q9.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">We must be willing to let go of the life we have planned, so as to have the life that is waiting for us.</p>
+              <p class="card-text">We must be willing to let go of the life we have planned, so as to have the life that
+                is waiting for us.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -308,17 +313,18 @@
           <img src="assets/img/q10.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">Old minds are like old horses; you must exercise tham if you wish to keep them in working order.</p>
+              <p class="card-text">Old minds are like old horses; you must exercise tham if you wish to keep them in
+                working order.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -339,14 +345,14 @@
               <p class="card-text">Fear is the foundation of most governments</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -367,14 +373,14 @@
               <p class="card-text">Change your life today. Don't gamble on the future, act now, without delay.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -395,14 +401,14 @@
               <p class="card-text">Most people have the will to win, few have the will to prepare to win.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -423,14 +429,14 @@
               <p class="card-text">Oaths are but words and words are but wind.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -451,14 +457,14 @@
               <p class="card-text">You will never find the time for anything. If you want time, you must make it.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -479,14 +485,14 @@
               <p class="card-text">Be true to your work, your word, and your friend.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -507,14 +513,14 @@
               <p class="card-text">It's hard to be humble, when you're as great as I am.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -535,14 +541,14 @@
               <p class="card-text">There is a role and function for beauty in our time.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -563,14 +569,14 @@
               <p class="card-text">It's ok to show all your colors.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -588,17 +594,18 @@
           <img src="assets/img/q20.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">To love for the sake of being loved is human, but to love for the sake of loving is angelic.</p>
+              <p class="card-text">To love for the sake of being loved is human, but to love for the sake of loving is
+                angelic.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -619,14 +626,14 @@
               <p class="card-text">One is loved because one is loved. No reason is needed for loving.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -647,14 +654,14 @@
               <p class="card-text">The true art of memory is the art of attention.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -672,17 +679,18 @@
           <img src="assets/img/q23.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">Everything has its wonders, even darknes and silence. I learn, whatever state I may be in, therein to be content.</p>
+              <p class="card-text">Everything has its wonders, even darknes and silence. I learn, whatever state I may
+                be in, therein to be content.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -700,17 +708,18 @@
           <img src="assets/img/q24.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">Bachelors know more about women than married men; if they didn't they'd be married too.</p>
+              <p class="card-text">Bachelors know more about women than married men; if they didn't they'd be married
+                too.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -731,14 +740,14 @@
               <p class="card-text">If 'pro' is the opposite of 'con' what is the opposite of 'progr</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -756,17 +765,18 @@
           <img src="assets/img/q26.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">Infuse your life with action. Don't wait for it to happen. Make it happen. Make your own future. Make your own hope.</p>
+              <p class="card-text">Infuse your life with action. Don't wait for it to happen. Make it happen. Make your
+                own future. Make your own hope.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -787,14 +797,14 @@
               <p class="card-text">Never regret yesterday. Life is in you today and you make your tomorrow.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -812,17 +822,18 @@
           <img src="assets/img/q28.png" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote mb-0">
-              <p class="card-text">I have learned that friendship isn't about who you've known the longest. It's about who came and never left your side.</p>
+              <p class="card-text">I have learned that friendship isn't about who you've known the longest. It's about
+                who came and never left your side.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -843,14 +854,14 @@
               <p class="card-text">Share your smile with the world. It's a symbol of friendship and peace.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -871,14 +882,14 @@
               <p class="card-text">a friend is someone who gives you tatal freedom to be yourself.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group voting">
-                  <a href="" class="navbar-brand btn">
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/upvote.png " alt="Upvote" width="40" height="40">
                     <pre class="">50</pre>
-                  </a>
-                  <a href="" class="navbar-brand btn">
+                  </span>
+                  <span href="" class="navbar-brand btn">
                     <img src="../../assets/img/downvote.png" alt="Downvote" width="30" height="30">
                     <pre>40</pre>
-                  </a>
+                  </span>
                 </div>
                 <small class="text-muted" id="posted">9 mins</small>
               </div>
@@ -890,3 +901,40 @@
 
     </div>
   </div>
+  <form action="">
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Post your Quote</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="quoteImage" required>
+              <label class="custom-file-label" for="quoteImage">Choose Image with quotes written inside</label>
+            </div>
+            <div class="form-group">
+              <label for="quote-text" class="col-form-label">Quote:</label>
+              <textarea class="form-control" id="quote-text"></textarea>
+            </div>
+
+            <div class="form-group row">
+              <label for="author" class="col-sm-2 col-form-label">Author:</label>
+              <div class="col-md-7">
+                <input type="author" class="form-control" id="author" placeholder="Author">
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save Quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
